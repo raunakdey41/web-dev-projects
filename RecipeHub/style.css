@@ -33,11 +33,23 @@
             font-size: 1.1em;
         }
 
+        #leftnav:hover{
+            transition: transform 0.5s 100ms;
+            transform: scale(1.1);
+            text-shadow: 2px 2px 8px black;
+        }
+
         #rightnav>ul{
             margin-top: 15px;
             display: flex;
             flex-wrap: wrap;
             list-style: none;
+        }
+
+        #rightnav>ul>li:hover{
+            transition: transform 0.5s 100ms;
+            transform: scale(1.1);
+            text-shadow: 1px 1px 5px black;
         }
 
         main{
@@ -58,14 +70,20 @@
             display: flex;
             margin: 15px;
         }
-
+        
         .details{
             box-sizing: border-box;
-            border: 1px solid black;
             border-radius: 15px;
             padding: 25px;
+            box-shadow: 1px 1px 10px gray;
+            transition: transform 0.5s 100ms;
         }
-
+        
+        .details:hover
+        {
+            transform: scale(1.01);
+        }
+        
         .Heading{
             font-family: "Playpen Sans Deva", sans-serif;
             font-size: 1.4em;
@@ -73,12 +91,19 @@
 
         img{
             border-radius: 15px;
+            box-shadow: 1px 8px 10px gray;
+            transition: transform 0.5s 100ms;
+        }
+
+        img:hover{
+            transform: scale(1.1);
         }
 
         .img{
             border-radius: 15px;
             padding: 5px;
             text-align: center;
+            margin-right: 15px;
         }
 
         footer{
