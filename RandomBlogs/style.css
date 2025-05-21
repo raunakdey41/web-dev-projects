@@ -1,0 +1,208 @@
+/* 
+    Fonts used:
+        Noto Serif TC
+        Playpen Sans Deva
+        Playwrite HU
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    box-sizing: border-box;
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px){
+    /* This is the class for the entire grid */
+    .container{
+        display: grid;
+        grid-template-rows: 15% 40% 40% 5%;
+        grid-template-columns: repeat(6,1fr);
+        width: 100vw;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    /* This represents the header of the page */
+    .header{
+        grid-column: 3/5;
+        grid-row: 1/2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header>p:first-child{
+        font-family: "Playwrite HU";
+        font-weight: bolder;
+        font-size: 2em;
+    }
+
+    .header>p:last-child{
+        font-family: "Noto Serif TC";
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    /* This represents the footer of the page */
+    .footer{
+        grid-column: 1/7;
+        grid-row: 4/5;
+        font-size: 0.88em;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+    }
+
+    /* This is the class for the general grid pattern of the products in the page */
+    .item{
+        display: grid;
+        grid-template-rows: 50% 30% 20%;
+        grid-template-columns: 1fr;
+        box-shadow: 1px 1px 10px 1px;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    img{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        width: 100%;
+    }
+
+    .item>p:first-child{
+        display: flex;
+        justify-content: center;
+        grid-row: 1/2;
+    }
+
+    /* This is the class for the general description of the product listed */
+    .desc{
+        padding: 5px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* This is the class for the author intro */
+    .author{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+    }
+
+    /* This is the class for the sector of the product */
+    .sector{
+        padding: 5px;
+        background-color: skyblue;
+        color: white;
+        border-radius: 7px;
+    }
+
+
+    /* This is the class for aligning the first product in the grid of the main container */
+    .product1{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    /* This is the class for aligning the second product in the grid of the main container */
+    .product2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    /* This is the class for aligning the third product in the grid of the main container */
+    .product3{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    /* This is the class for aligning the fourth product in the grid of the main container */
+    .product4{
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+
+    /* This is the class for aligning the fifth product in the grid of the main container */
+    .product5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    /* This is the class for aligning the sixth product in the grid of the main container */
+    .product6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    /* This is the class for aligning the seventh product in the grid of the main container */
+    .product7{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+
+    /* This is the class for aligning the eigth product in the grid of the main container */
+    .product8{
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% repeat(8,auto) auto;
+        width: 100vw;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .header{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header>p:first-child{
+        font-family: "Playwrite HU";
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .header>p:last-child{
+        font-family: "Noto Serif TC";
+        font-size: 0.65em;
+        text-align: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        grid-row: 10/11;
+        overflow: scroll;
+        font-size: 0.8em;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+}
