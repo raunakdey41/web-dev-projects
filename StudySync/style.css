@@ -17,9 +17,91 @@
     --dark-gray: #555;
 }
 
+body{
+    padding: 0.1rem;
+    background-color: var(--background-color);
+    text-align: center;
+    height: 100vh;
+}
+
+.logo{
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    color: var(--text-color);
+    gap: 0.625rem;
+}
+
+.logo>span{
+    align-self: center;
+}
+
+.logo>img{
+    height: 5.875rem;
+    width: 1.938rem;
+}
+
 header{
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    /* height: 10vh; */
+    width: 1280px;
     align-items: center;
+}
+
+.top{
+    display: none;
+    gap: 1.5rem;
+}
+
+.link{
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transform: color 0.1s;
+}
+
+.link:hover{
+    color: var(--link-color);
+}
+
+.contact{
+    display: none;
+    border-radius: 0.375rem;
+    padding: 0.75em 1.5rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.menu{
+    display: none;
+    border-radius: 0.375rem;
+    background-color: var(--background-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .top{
+        display: flex;
+    }
+
+    .contact{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: block;
+    }
 }
