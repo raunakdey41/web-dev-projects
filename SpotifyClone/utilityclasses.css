@@ -1,0 +1,81 @@
+/* Fonts available:
+    Inter
+    Manrope
+    Outfit
+    Poppins
+ */
+
+:root{
+    --fcw: white;
+    --fcg: gray;
+    --inter: 'Inter', serif;
+    --manrope: 'Manrope', serif;
+    --outfit: 'Outfit', serif;
+    --poppins: 'Poppins', serif;
+    --btn-color: white;
+}
+
+.svg{
+    height: 5vh;
+}
+
+.border{
+    border: 1px solid white;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcsa{
+    justify-content: space-around;
+}
+
+.aic{
+    align-items: center;
+}
+
+.gray{
+    color: var(--fcg);
+}
+
+.white{
+    color: var(--fcw);
+}
+
+.inter{
+    font-family: var(--inter);
+}
+
+.manrope{
+    font-family: var(--manrope);
+}
+
+.outfit{
+    font-family: var(--outfit);
+}
+
+.poppins{
+    font-family: var(--poppins);
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+button{
+    background-color: var(--btn-color);
+    font-family: var(--inter);
+    font-weight: bold;
+    height: 3em;
+    width: 10em;
+    border-radius: 5em;
+}

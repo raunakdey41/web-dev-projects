@@ -1,5 +1,31 @@
+:root{
+    --bg-color: rgb(46, 45, 45);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    /* background-color: black; */
+}
+
+header{
+    height: 5vh;
+    margin: 1vh;
+}
+
+main{
+    margin: 1vh;
+    background: var(--bg-color);
+}
+
+.library{
+    width: 25vw;
+}
+
+.right{
+    width: 75vw;
 }
