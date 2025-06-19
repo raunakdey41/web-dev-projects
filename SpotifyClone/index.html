@@ -20,27 +20,29 @@
 
         <!-- Comprises logo, search and browse -->
 
-        <div class="left-header flexbox jcsa">
+        <div class="left-header flexbox jcsb">
 
-            <img src="logo.svg" alt="logo" class="svg">
-            <img src="searchbutton.svg" alt="search" class="svg">
-            <input type="text" placeholder="What do you want to play?">
-            <img src="browse.svg" alt="browse" class="svg">
+            <img src="logo.svg" alt="logo" class="svg-mid">
+            <img src="homebutton.svg" alt="home" class="svg-mid">
+            <div class="search-section flexbox jcsb">
+                <img src="searchbutton.svg" alt="search" class="svg-mid">
+                <input type="text" placeholder="What do you want to play?">
+                <img src="browse.svg" alt="browse" class="svg-mid">
+            </div>
 
         </div>
 
         <!-- Comprises premium, support, download, install and login -->
 
-        <div class="right-header flexbox jcsa aic">
+        <div class="right-header flexbox jcsb aic">
             
             <span id="premium">Premium</span>
             <span id="support">Support</span>
             <span id="download">Download</span>
-
-            <img src="install.svg" alt="install" class="svg"> 
             
-            <span id="installApp">
-                Install App
+            <span id="installApp" class="flexbox jcc aic">
+                <img src="install.svg" alt="install" class="svg-small"> 
+                <div>Install App</div>
             </span>
             <span id="signup">Sign up</span>
             <span id="login">
@@ -73,6 +75,13 @@
 
                 </div>
                 <div class="browse-podcasts">
+
+                    <p class="bold">Let's find some podcasts to follow</p>
+                    <p>We'll keep you updated on new episodes</p>
+
+                    <button>
+                        Browse podcasts
+                    </button>
 
                 </div>
             </div>

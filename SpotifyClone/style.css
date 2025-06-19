@@ -15,6 +15,20 @@ body{
 header{
     height: 5vh;
     margin: 1vh;
+    border: 1px solid black;
+}
+
+button:hover{
+    transition-duration: 450ms;
+    transform: scale(1.1);
+}
+
+.left-header{
+    gap: 2.5vw;
+}
+
+.right-header{
+    gap: 3vw;
 }
 
 main{
@@ -28,4 +42,8 @@ main{
 
 .right{
     width: 75vw;
+}
+
+.left-top{
+    overflow-y: scroll;
 }

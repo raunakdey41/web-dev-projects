@@ -15,8 +15,12 @@
     --btn-color: white;
 }
 
-.svg{
-    height: 5vh;
+.svg-small{
+    height: 3vh;
+}
+
+.svg-mid{
+    height: 4.5vh;
 }
 
 .border{
@@ -37,6 +41,10 @@
 
 .jcsa{
     justify-content: space-around;
+}
+
+.jcse{
+    justify-content: space-evenly;
 }
 
 .aic{
