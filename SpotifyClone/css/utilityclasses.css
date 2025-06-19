@@ -17,10 +17,12 @@
 
 .svg-small{
     height: 3vh;
+    filter: invert(1);
 }
 
 .svg-mid{
     height: 4.5vh;
+    filter: invert(1);
 }
 
 .border{
