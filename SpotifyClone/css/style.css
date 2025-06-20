@@ -17,6 +17,8 @@
 
 body{
     background-color: black;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
 }
 
 header{
@@ -33,26 +35,18 @@ header{
     gap: 3vw;
 }
 
-main{
-    margin: 1vh;
-    background: var(--bg-color);
-}
-
-.library{
-    width: 25vw;
-}
-
-.right{
-    width: 75vw;
-}
-
-.left-top{
-    overflow-y: scroll;
-}
-
 .search-section>input{
     width: 25vw;
     border-radius: 0.5em;
+}
+
+button{
+    background-color: var(--btn-color);
+    font-family: var(--inter);
+    font-weight: bold;
+    height: 3em;
+    width: 10em;
+    border-radius: 5em;
 }
 
 #installApp{
@@ -62,4 +56,28 @@ main{
 #installApp:hover{
     color: var(--fcw);
     filter: invert(0);
+}
+
+main{
+    margin: 1vh;
+}
+
+#library{
+    width: 20vw;
+    flex-direction: column;
+    margin-right: 0.5vw;
+}
+
+#left-top{
+    flex-direction: column;
+}
+
+#song-section{
+    width: 80vw;
+}
+
+footer{
+    background-color: white;
+    bottom: 2vh;
+    position: sticky;
 }

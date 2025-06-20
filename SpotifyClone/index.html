@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-</body>
-
     <!-- This is the header section i.e. the top part of the website -->
 
     <header class="flexbox jcsb manrope aic">
@@ -59,11 +57,15 @@
     <!-- This is the main part of the clone -->
 
     <main class="flexbox">
-        <div class="library flexbox white manrope">
+        <div class="flexbox white manrope darkgrey-background border aic" id="library">
 
             <!-- This is the top left portion of library that will be scrollable in vertical direction -->
 
-            <div class="left-top">
+            <div class="flexbox jcse inter bold">
+                Your Library
+            </div>
+
+            <div class="border lightgrey-background library-margin library-padding" id="left-top">
                 <div class="create-playlist">
 
                     <p class="bold">Create your own playlist</p>
@@ -88,12 +90,18 @@
 
             <!-- This is the bottom left portion of library that will not be scrollable and basically consist of footer properties -->
 
-            <div class="left-bottom">
+            <div class="left-bottom library-margin library-padding" id="left-bottom">
 
             </div>
         </div>
-        <div class="right flexbox gray inter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis quasi at repellat, facere aperiam ab, harum, fugiat laborum ex incidunt rerum laboriosam excepturi neque cumque molestiae necessitatibus esse suscipit asperiores expedita? Voluptates quod assumenda, voluptas ullam officia consectetur id quis eveniet fugit quos, ut porro reprehenderit sint maiores enim!</div>
+        <div class="flexbox gray inter" id="song-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis quasi at repellat, facere aperiam ab, harum, fugiat laborum ex incidunt rerum laboriosam excepturi neque cumque molestiae necessitatibus esse suscipit asperiores expedita? Voluptates quod assumenda, voluptas ullam officia consectetur id quis eveniet fugit quos, ut porro reprehenderit sint maiores enim!</div>
     </main>
 
+    <footer>
+        Preview of Spotify.
+        Sign up to get unlimited songs and podcasts with occassional ads. No credit card needed.
+    </footer>
+
+</body>
     <script src="script.js"></script>
 </html>
