@@ -20,17 +20,17 @@
 
         <div class="left-header flexbox jcsb">
 
-            <img src="assets/logo.svg" alt="logo" class="svg-mid">
-            <img src="assets/homebutton.svg" alt="home" class="svg-mid">
+            <img src="assets/logo.svg" alt="logo" class="svg-mid filter">
+            <img src="assets/homebutton.svg" alt="home" class="svg-mid filter">
             <div class="search-section flexbox jcsb">
-                <img src="assets/searchbutton.svg" alt="search" class="svg-mid hover  grey-bg">
+                <img src="assets/searchbutton.svg" alt="search" class="svg-mid filter hover  grey-bg">
                 <input type="text" placeholder="What do you want to play?" id="searchbar">
-                <img src="assets/browse.svg" alt="browse" class="svg-mid hover grey-bg">
+                <img src="assets/browse.svg" alt="browse" class="svg-mid filter hover grey-bg">
             </div>
 
         </div>
 
-        <!-- Comprises premium, support, download, install and login -->
+        <!-- Comprises premium, support, download,  and login -->
 
         <div class="right-header flexbox jcsb aic gray bold">
             
@@ -39,7 +39,7 @@
             <span id="download" class="hover text-hover">Download</span>
             
             <span id="installApp" class="flexbox jcc aic hover">
-                <img src="assets/install.svg" alt="install" class="svg-small" id="installbutton"> 
+                <img src="assets/install.svg" alt="install" class="svg-small filter" id="installbutton"> 
                 <div>Install App</div>
             </span>
             <span id="signup" class="hover text-hover">Sign up</span>
@@ -65,18 +65,18 @@
                 Your Library
             </div>
 
-            <div class="border lightgrey-background library-margin library-padding" id="left-top">
-                <div class="create-playlist">
+            <div class="border lightgrey-background library-margin library-padding flexbox library-gap" id="left-top">
+                <div class="library-gap flexbox" id="create-playlist">
 
-                    <p class="bold">Create your own playlist</p>
-                    <p>It's easy we'll help you</p>
+                    <div class="bold">Create your own playlist</div>
+                    <div>It's easy we'll help you</div>
 
                     <button class="hover">
                         Create playlist
                     </button>
 
                 </div>
-                <div class="browse-podcasts">
+                <div class="library-gap flexbox" id="browse-products">
 
                     <p class="bold">Let's find some podcasts to follow</p>
                     <p>We'll keep you updated on new episodes</p>
@@ -90,17 +90,30 @@
 
             <!-- This is the bottom left portion of library that will not be scrollable and basically consist of footer properties -->
 
-            <div class="left-bottom library-margin library-padding" id="left-bottom">
+            <div class="left-bottom library-margin library-padding flexbox library-gap acc" id="left-bottom">
+
+                <div class="text-hover hover gray">Legal</div>
+                <div class="hover text-hover gray">Safety & Privacy Center</div>
+                <div class="hover text-hover gray">Privacy policy</div>
+                <div class="hover text-hover gray">Cookies</div>
+                <div class="hover text-hover gray">About Ads</div>
+                <div class="hover text-hover gray">Accessibility</div>
+                
+                <!-- Language button -->
+
+                <button id="language" class="
+                flexbox aic jcc hover bold">
+                    <img src="assets/language.svg" alt="language selection" class="svg-small ">
+                    English
+                </button>
 
             </div>
         </div>
+
+        <!-- Song section of the website -->
+
         <div class="flexbox gray inter" id="song-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis quasi at repellat, facere aperiam ab, harum, fugiat laborum ex incidunt rerum laboriosam excepturi neque cumque molestiae necessitatibus esse suscipit asperiores expedita? Voluptates quod assumenda, voluptas ullam officia consectetur id quis eveniet fugit quos, ut porro reprehenderit sint maiores enim!</div>
     </main>
-
-    <footer>
-        Preview of Spotify.
-        Sign up to get unlimited songs and podcasts with occassional ads. No credit card needed.
-    </footer>
 
 </body>
     <script src="script.js"></script>

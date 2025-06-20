@@ -63,21 +63,27 @@ main{
 }
 
 #library{
+    height: 85vh;
     width: 20vw;
     flex-direction: column;
     margin-right: 0.5vw;
 }
 
-#left-top{
+#left-top, #create-playlist, #browse-products{
+    height: 50%;
     flex-direction: column;
+    gap: 1.5vh;
 }
 
 #song-section{
     width: 80vw;
 }
 
-footer{
-    background-color: white;
-    bottom: 2vh;
-    position: sticky;
+#left-bottom{
+    height: 30%;
+    flex-wrap: wrap;
+}
+
+#language{
+    gap: 0.5vw;
 }

@@ -8,8 +8,8 @@
 :root{
     --fcw: white;
     --fcg: gray;
-    --lightgrey: rgb(80, 77, 77);
-    --darkgrey: rgb(56, 56, 56);
+    --lightgrey: rgb(66, 65, 65);
+    --darkgrey: rgb(34, 33, 33);
     --inter: 'Inter', serif;
     --manrope: 'Manrope', serif;
     --outfit: 'Outfit', serif;
@@ -19,12 +19,14 @@
 
 .svg-small{
     height: 2.75vh;
+}
+
+.filter{
     filter: invert(1);
 }
 
 .svg-mid{
     height: 4.2vh;
-    filter: invert(1);
 }
 
 .flexbox{
@@ -49,6 +51,10 @@
 
 .aic{
     align-items: center;
+}
+
+.acc{
+    align-content: center;
 }
 
 .gray{
@@ -115,4 +121,8 @@
 
 .library-padding{
     padding: 0.5em;
+}
+
+.library-gap{
+    gap: 2vh 1.5vw;
 }
