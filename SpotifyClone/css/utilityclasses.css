@@ -16,17 +16,13 @@
 }
 
 .svg-small{
-    height: 3vh;
+    height: 2.75vh;
     filter: invert(1);
 }
 
 .svg-mid{
-    height: 4.5vh;
+    height: 4.2vh;
     filter: invert(1);
-}
-
-.border{
-    border: 1px solid white;
 }
 
 .flexbox{
@@ -61,6 +57,10 @@
     color: var(--fcw);
 }
 
+.grey-bg{
+    filter: invert(0.5);
+}
+
 .inter{
     font-family: var(--inter);
 }
@@ -88,4 +88,18 @@ button{
     height: 3em;
     width: 10em;
     border-radius: 5em;
+}
+
+.hover:hover{
+    transition-duration: 450ms;
+    transform: scale(1.1);
+}
+
+.text-hover:hover{
+    color: var(--fcw);
+    filter: invert(0);
+}
+
+.grey-bg:hover{
+    filter: invert(1);
 }
