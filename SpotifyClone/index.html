@@ -14,18 +14,18 @@
 <body>
     <!-- This is the header section i.e. the top part of the website -->
 
-    <header class="flexbox jcsb manrope aic">
+    <header class="flexbox jcsb aic">
 
         <!-- Comprises logo, search and browse -->
 
         <div class="left-header flexbox jcsb">
 
-            <img src="assets/logo.svg" alt="logo" class="svg-mid filter">
-            <img src="assets/homebutton.svg" alt="home" class="svg-mid filter">
+            <img src="icons/logo.svg" alt="logo" class="svg-mid filter">
+            <img src="icons/homebutton.svg" alt="home" class="svg-mid filter">
             <div class="search-section flexbox jcsb">
-                <img src="assets/searchbutton.svg" alt="search" class="svg-mid filter hover  grey-bg">
+                <img src="icons/searchbutton.svg" alt="search" class="svg-mid filter hover  grey-bg">
                 <input type="text" placeholder="What do you want to play?" id="searchbar">
-                <img src="assets/browse.svg" alt="browse" class="svg-mid filter hover grey-bg">
+                <img src="icons/browse.svg" alt="browse" class="svg-mid filter hover grey-bg">
             </div>
 
         </div>
@@ -39,7 +39,7 @@
             <span id="download" class="hover text-hover">Download</span>
             
             <span id="installApp" class="flexbox jcc aic hover">
-                <img src="assets/install.svg" alt="install" class="svg-small filter" id="installbutton"> 
+                <img src="icons/install.svg" alt="install" class="svg-small filter" id="installbutton"> 
                 <div>Install App</div>
             </span>
             <span id="signup" class="hover text-hover">Sign up</span>
@@ -57,16 +57,19 @@
     <!-- This is the main part of the clone -->
 
     <main class="flexbox">
-        <div class="flexbox white manrope darkgrey-background border aic" id="library">
+
+        <!-- This is the library section  -->
+
+        <div class="flexbox white darkgrey-background border aic" id="library">
 
             <!-- This is the top left portion of library that will be scrollable in vertical direction -->
 
-            <div class="flexbox jcse inter bold">
+            <div class="flexbox jcse inter bold library-padding" id="library-heading">
                 Your Library
             </div>
 
-            <div class="border lightgrey-background library-margin library-padding flexbox library-gap" id="left-top">
-                <div class="library-gap flexbox" id="create-playlist">
+            <div class="library-margin library-padding flexbox library-gap" id="left-top">
+                <div class="library-gap flexbox border lightgrey-background library-padding" id="create-playlist">
 
                     <div class="bold">Create your own playlist</div>
                     <div>It's easy we'll help you</div>
@@ -76,7 +79,7 @@
                     </button>
 
                 </div>
-                <div class="library-gap flexbox" id="browse-products">
+                <div class="library-gap flexbox border lightgrey-background library-padding" id="browse-products">
 
                     <p class="bold">Let's find some podcasts to follow</p>
                     <p>We'll keep you updated on new episodes</p>
@@ -103,7 +106,7 @@
 
                 <button id="language" class="
                 flexbox aic jcc hover bold">
-                    <img src="assets/language.svg" alt="language selection" class="svg-small ">
+                    <img src="icons/language.svg" alt="language selection" class="svg-small ">
                     English
                 </button>
 
@@ -112,7 +115,75 @@
 
         <!-- Song section of the website -->
 
-        <div class="flexbox gray inter" id="song-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis quasi at repellat, facere aperiam ab, harum, fugiat laborum ex incidunt rerum laboriosam excepturi neque cumque molestiae necessitatibus esse suscipit asperiores expedita? Voluptates quod assumenda, voluptas ullam officia consectetur id quis eveniet fugit quos, ut porro reprehenderit sint maiores enim!</div>
+        <div class="flexbox darkgrey-background white border" id="song-section">
+
+            <!-- Container for the songs -->
+
+            <div id="trending" class="song-container">
+                Trending Songs
+
+                <!-- Tiles containing the songs -->
+
+                <div class="flexbox songs-list">
+
+                    <div class="flexbox song-tiles border aic hover">
+                        <img src="tile-images/guitar-1699501_1280.jpg" alt="Song poster" class="song-tile-images border">
+                        <p class="song-name manrope white">Lorem, ipsum.</p>
+                        <div class="singers gray flexbox jcsa">Lorem, ipsum dolor, sit amet, consectetur adipisicing</div>
+                    </div>
+
+                </div>
+
+            <!-- Container for the songs -->
+
+            <div id="artists" class="song-container">
+                Popular artists
+
+                <!-- Tiles containing the songs -->
+
+                
+            </div>
+
+            <!-- Container for the songs -->
+
+            <div id="albums" class="song-container">
+                Popular albums and singles
+
+                <!-- Tiles containing the songs -->
+
+                
+            </div>
+
+            <!-- Container for the songs -->
+
+            <div id="radio" class="song-container">
+                Popular radio
+
+                <!-- Tiles containing the songs -->
+
+                    
+            </div>
+
+            <!-- Container for the songs -->
+
+            <div id="featured" class="song-container">
+                Featured Charts
+
+                <!-- Tiles containing the songs -->
+
+            
+            </div>
+
+            <!-- Container for the songs -->
+
+            <div id="best" class="song-container">
+                Best On List
+
+                <!-- Tiles containing the songs -->
+
+                
+            </div>
+        </div>
     </main>
 
 </body>

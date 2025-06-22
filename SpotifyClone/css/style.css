@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--manrope);
 }
 
 body{
@@ -22,9 +23,11 @@ body{
 }
 
 header{
+    position: fixed;
     height: 8vh;
     margin: 1vh;
     border: 1px solid black;
+    gap: 10vw;
 }
 
 .left-header{
@@ -51,6 +54,7 @@ button{
 
 #installApp{
     filter: invert(0.5);
+    gap: 0.3em;
 }
 
 #installApp:hover{
@@ -59,24 +63,28 @@ button{
 }
 
 main{
+    position: fixed;
+    top: 9vh;
     margin: 1vh;
 }
 
 #library{
+    position: fixed;
+    top: 10vh;
     height: 85vh;
     width: 20vw;
     flex-direction: column;
-    margin-right: 0.5vw;
+}
+
+#library-heading{
+    font-weight: 800;
+    font-size: larger;
 }
 
 #left-top, #create-playlist, #browse-products{
     height: 50%;
     flex-direction: column;
     gap: 1.5vh;
-}
-
-#song-section{
-    width: 80vw;
 }
 
 #left-bottom{
@@ -86,4 +94,16 @@ main{
 
 #language{
     gap: 0.5vw;
+}
+
+#song-section{
+    flex-flow: column;
+    width: 77.5vw;
+    height: 85vh;
+    overflow-y: auto;
+    margin-left: 20.5vw;
+}
+
+.song-tiles:hover{
+    box-shadow: 0.2em 0.2em 0.5em gray;
 }
