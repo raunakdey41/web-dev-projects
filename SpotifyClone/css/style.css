@@ -107,3 +107,13 @@ main{
 .song-tiles:hover{
     box-shadow: 0.2em 0.2em 0.5em gray;
 }
+
+footer{
+    position: absolute;
+    background-color: rgb(16, 72, 104);
+    bottom: 0;
+    margin: 0vh 3.8vw;
+    height: 4.5vh;
+    width: 90%;
+    padding: 1vh;
+}

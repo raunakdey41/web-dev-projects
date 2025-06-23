@@ -130,7 +130,7 @@
 .song-container{
     font-weight:900;
     font-size: x-large;
-    padding: 0.5vh 0.5vw;
+    padding: 2vh 2vw;
 }
 
 .song-tiles{
@@ -162,4 +162,10 @@
     padding: 1em 1em;
     gap: 1.5vw;
     overflow-x: auto;
+}
+
+.playbar{
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.5em;
 }
