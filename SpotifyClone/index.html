@@ -449,15 +449,42 @@
         </div>
     </main>
 
-    <footer class="flexbox jcsa manrope aic border">
-        <img src="icons/rewind-back.svg" alt="Rewind back" class="svg-mid playbar">
-        <img src="icons/play.svg" alt="Play/Pause button" class="svg-mid playbar">
-        <img src="icons/rewind-forward.svg" alt="Rewind forward" class="svg-mid playbar">
-        <img src="icons/no-volume.svg" alt="Mute" class="svg-mid playbar">
-        <img src="icons/volume-small.svg" alt="50% volume" class="svg-mid playbar">
-        <img src="icons/volume-loud.svg" alt="100% volume" class="svg-mid playbar">
-        <img src="icons/share.svg" alt="Share button" class="svg-mid playbar">
-        
+    <!-- This is the footer section containing the play settings for a song -->
+
+    <footer class="flexbox jcc aic" id="music-control">
+
+        <!-- Show or hide the music control bar -->
+
+        <div class="controlbar">
+            <img src="icons/displayBar.svg" alt="" class="svg-mid" id="display">
+        </div>
+
+        <!-- Related to controls of the song -->
+
+        <div class="library-gap flexbox jcc aic">
+            <!-- Play settings for a song -->
+
+            <div class="play-settings song-controls flexbox jcc aic">
+                <img src="icons/prev-song.svg" alt="Play previous song" class="svg-mid playbar prev-button" title="Previous song">
+                <img src="icons/rewind-10-seconds.svg" alt="Rewind 10 seconds" class="svg-small playbar" title="Rewind">
+                <img src="icons/play.svg" alt="Play/Pause button" class="svg-mid playbar play-button" id="play" title="">
+                <img src="icons/10-seconds-forward.svg" alt="Forward 10 seconds" class="svg-small playbar" title="Forward">
+                <img src="icons/next-song.svg" alt="Play next song" class="svg-mid playbar next-button" title="Next song">
+            </div>
+
+            <!-- Sound settings for the song -->
+
+            <img src="icons/no-volume.svg" alt="Mute" class="svg-mid playbar">
+            <img src="icons/volume-small.svg" alt="50% volume" class="svg-mid playbar">
+            <img src="icons/volume-loud.svg" alt="100% volume" class="svg-mid playbar">
+
+            <!-- Share button and add/remove from liked songs -->
+
+            <img src="icons/share.svg" alt="Share button" class="svg-mid playbar">
+            <img src="icons/add.svg" alt="Add to liked songs" class="svg-mid playbar">
+            <img src="icons/minus.svg" alt="Remove from liked songs" class="svg-mid playbar">
+        </div>
+
     </footer>
 
 </body>

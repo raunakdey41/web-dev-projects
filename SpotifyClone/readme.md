@@ -6,3 +6,5 @@ Tech stack used:
     Javascript
 
 Images used are from Pixabay royalty free images.
+
+Icons used are from svgrepo

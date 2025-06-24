@@ -109,11 +109,23 @@ main{
 }
 
 footer{
+    flex-direction: column;
     position: absolute;
-    background-color: rgb(16, 72, 104);
     bottom: 0;
-    margin: 0vh 3.8vw;
-    height: 4.5vh;
-    width: 90%;
-    padding: 1vh;
+    margin: 0vh 20vw;
+    height: 11vh;
+    width: 60%;
+    border-top-left-radius: 5vw;
+    border-top-right-radius:5vw;
+    background: rgba(20, 20, 20, 0.95);
+    border: 0.2em solid #21446A;
+    border-bottom: none;
+    box-shadow: 0 0.2em 10em 1em rgba(10, 57, 145, 0.6);
+    padding-bottom: 2vh;
+    filter: opacity(0.8);
+}
+
+.playbar:hover{
+    box-shadow:  0 0 1em rgba(0, 85, 239, 1);
+    filter: brightness(1.5);
 }
