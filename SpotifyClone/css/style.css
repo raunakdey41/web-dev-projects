@@ -108,7 +108,7 @@ main{
     box-shadow: 0.2em 0.2em 0.5em gray;
 }
 
-footer{
+#music-control{
     flex-direction: column;
     position: absolute;
     bottom: 0;
@@ -125,7 +125,7 @@ footer{
     filter: opacity(0.8);
 }
 
-.playbar:hover{
+.playbar-icons:hover{
     box-shadow:  0 0 1em rgba(0, 85, 239, 1);
     filter: brightness(1.5);
 }

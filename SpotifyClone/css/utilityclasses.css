@@ -53,6 +53,10 @@
     align-items: center;
 }
 
+.ais{
+    align-items: start;
+}
+
 .acc{
     align-content: center;
 }
@@ -138,7 +142,6 @@
     padding: 0.1em;
     height: 10em;
     width: 7.5em;
-    /* border: 1px solid wheat; */
 }
 
 .song-name{
@@ -164,7 +167,7 @@
     overflow-x: auto;
 }
 
-.playbar{
+.playbar-icons{
     background-color: white;
     border-radius: 100%;
     padding: 0.5em;
@@ -175,6 +178,6 @@
 }
 
 .song-controls{
-    gap: 0.5vw;
+    gap: 0.2vw;
     flex-direction: row;
 }

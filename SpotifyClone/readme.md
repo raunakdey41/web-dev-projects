@@ -5,6 +5,6 @@ Tech stack used:
     CSS
     Javascript
 
-Images used are from Pixabay royalty free images.
+Songs and Images used are from Pixabay royalty free images and songs.
 
 Icons used are from svgrepo
