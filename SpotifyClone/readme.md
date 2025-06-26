@@ -24,4 +24,6 @@ This project is a creative interpretation and not an exact replica of Spotify.
 
 UI/UX decisions, layout styling, and features were made with flexibility and originality in mind.
 
-# This project is non-commercial and uses the Jamendo API under its free tier. All music is royalty-free and intended for educational purposes only.
+
+
+This project is non-commercial and uses the Jamendo API under its free tier. All music is royalty-free and intended for educational purposes only.
