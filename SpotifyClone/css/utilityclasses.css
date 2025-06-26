@@ -17,16 +17,12 @@
     --btn-color: white;
 }
 
-.svg-small{
-    height: 2.75vh;
-}
-
 .filter{
     filter: invert(1);
 }
 
 .svg-mid{
-    height: 4.2vh;
+    height: 6.2vh;
 }
 
 .flexbox{
@@ -93,6 +89,15 @@
     font-weight: bolder;
 }
 
+.right-header{
+    gap: 0.5vw;
+}
+
+.logo-hover:hover{
+    transition-duration: 450ms;
+    transform: scale(1.2);
+}
+
 .hover:hover{
     transition-duration: 450ms;
     transform: scale(1.1);
@@ -109,6 +114,24 @@
 
 .border{
     border-radius: 0.5em;
+}
+
+.side-heading{
+    position: fixed;
+    font-weight: 800;
+    font-size: larger;
+}
+
+
+.listed-side-songs{
+    position: relative;
+    top: 4vh;
+    padding: 1vw;
+}
+
+.individual-scroll{
+    overflow-y: auto;
+    scrollbar-color: var(--lightgrey) var(--darkgrey);
 }
 
 .darkgrey-background{
@@ -131,6 +154,10 @@
     gap: 2vh 1.5vw;
 }
 
+.super-song-container{
+    margin: 0.5em;
+}
+
 .song-container{
     font-weight:900;
     font-size: x-large;
@@ -147,18 +174,20 @@
 .song-name{
     font-size: 16px;
     font-weight: 400;
+    overflow: hidden;
 }
 
 .singers{
     font-size: 14px;
     font-weight: 300;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .song-tile-images{
     padding: 0.1em;
-    height: 7.1em;
-    width: 7.1em;
+    height: 6em;
+    width: 6.5em;
 }
 
 .songs-list{

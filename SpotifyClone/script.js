@@ -11,6 +11,7 @@ console.log(songNames); // Store arrays of the song tiles
 let songContainer = document.querySelectorAll(".song-container"); // Store the entire box of songs
 let songImages = document.querySelectorAll(".song-tile-images"); // Store the images of the songs
 
+// Fetch songs from Jamendo as soon as window loads
 document.addEventListener("DOMContentLoaded", function(){
     fetchSongs();
 })
@@ -58,9 +59,9 @@ displayBar.addEventListener("click", function(){
     }
 });
 
-for(let obj in songImages){
-    console.log(songImages[obj]);
-}
+// for(let obj in songImages){
+//     console.log(songImages[obj]);
+// }
 
 // Fetch songs from jamendo
 async function fetchSongs() {

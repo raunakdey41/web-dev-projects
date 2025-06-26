@@ -16,41 +16,19 @@
 
     <header class="flexbox jcsb aic">
 
-        <!-- Comprises logo, search and browse -->
+        <!-- Comprises logo -->
 
         <div class="left-header flexbox jcsb">
-
-            <img src="icons/guitar-icon.svg" alt="logo" class="svg-mid filter">
-            <div class="search-section flexbox jcsb">
-                <img src="icons/searchbutton.svg" alt="search" class="svg-mid filter hover  grey-bg">
-                <input type="text" placeholder="What do you want to play?" id="searchbar">
-                <img src="icons/browse.svg" alt="browse" class="svg-mid filter hover grey-bg">
-            </div>
-
+            <img src="icons/guitar-icon.svg" alt="logo" class="svg-mid filter logo-hover" id="logo"> 
         </div>
 
-        <!-- Comprises premium, support, download,  and login -->
+        <!-- Comprises the search bar -->
 
-        <div class="right-header flexbox jcsb aic gray bold">
-            
-            <span id="premium" class="hover text-hover">Premium</span>
-            <span id="support" class="hover text-hover">Support</span>
-            <span id="download" class="hover text-hover">Download</span>
-            
-            <span id="installApp" class="flexbox jcc aic hover">
-                <img src="icons/install.svg" alt="install" class="svg-small filter" id="installbutton"> 
-                <div>Install App</div>
-            </span>
-            <span id="signup" class="hover text-hover">Sign up</span>
-            <span id="login">
-
-                <button class="hover">
-                    Log In
-                </button>
-
-            </span>
-
+        <div class="right-header search-section flexbox jcsb">
+            <input type="text" placeholder="What do you want to play?" id="searchbar">
+            <img src="icons/searchbutton.svg" alt="search" class="svg-mid filter hover grey-bg" id="searchButton">
         </div>
+
     </header>
 
     <!-- This is the main part of the clone -->
@@ -61,54 +39,16 @@
 
         <div class="flexbox white darkgrey-background border aic" id="library">
 
-            <!-- This is the top left portion of library that will be scrollable in vertical direction -->
+            <!-- This is the library (playlist) that will be scrollable and having all the songs that the user has added -->
 
-            <div class="flexbox jcse inter bold library-padding" id="library-heading">
+            <div class="flexbox jcse inter bold library-padding side-heading" id="library-heading">
                 Your Library
             </div>
 
-            <div class="library-margin library-padding flexbox library-gap" id="left-top">
-                <div class="library-gap flexbox border lightgrey-background library-padding" id="create-playlist">
+            <div class="library-margin library-padding flexbox library-gap listed-side-songs individual-scroll" id="library-songs">
 
-                    <div class="bold">Create your own playlist</div>
-                    <div>It's easy we'll help you</div>
-
-                    <button class="hover">
-                        Create playlist
-                    </button>
-
-                </div>
-                <div class="library-gap flexbox border lightgrey-background library-padding" id="browse-products">
-
-                    <p class="bold">Let's find some podcasts to follow</p>
-                    <p>We'll keep you updated on new episodes</p>
-
-                    <button class="hover">
-                        Browse podcasts
-                    </button>
-
-                </div>
-            </div>
-
-            <!-- This is the bottom left portion of library that will not be scrollable and basically consist of footer properties -->
-
-            <div class="left-bottom library-margin library-padding flexbox library-gap acc" id="left-bottom">
-
-                <div class="text-hover hover gray">Legal</div>
-                <div class="hover text-hover gray">Safety & Privacy Center</div>
-                <div class="hover text-hover gray">Privacy policy</div>
-                <div class="hover text-hover gray">Cookies</div>
-                <div class="hover text-hover gray">About Ads</div>
-                <div class="hover text-hover gray">Accessibility</div>
+                <!-- Selected songs appear here -->
                 
-                <!-- Language button -->
-
-                <button id="language" class="
-                flexbox aic jcc hover bold">
-                    <img src="icons/language.svg" alt="language selection" class="svg-small ">
-                    English
-                </button>
-
             </div>
         </div>
 
@@ -116,336 +56,337 @@
 
         <div class="flexbox darkgrey-background white border" id="song-section">
 
-            <!-- Container for the songs -->
+            <!-- Super container of the entire song section -->
 
-            <div id="trending" class="song-container">
-                Trending Songs
+            <div class="super-song-container individual-scroll">
 
-                <!-- Tiles containing the songs -->
+                <!-- Container for the songs -->
 
-                <div class="flexbox songs-list">
+                <div id="trending" class="song-container">
+                    Trending Songs
 
-                    <div class="flexbox song-tiles border ais jcc hover">
-                        <img src="tile-images/mimosa-7910067_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Why don't you do right?</p>
-                        <p class="singers gray flexbox jcsa aic">By JazzResin</p>
-                        <p class="singers gray flexbox jcsa aic">Torch, American Standard</p>
+                    <!-- Tiles containing the songs -->
+
+                    <div class="flexbox songs-list">
+
+                        <div class="flexbox song-tiles border ais jcc hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
                     </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/man-8282467_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/agility-1850711_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/sheet-music-7107045_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/concert-7424190_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/piano-9271509_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/guitar-1699501_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Container for the songs -->
-
-            <div id="artists" class="song-container">
-                Popular artists
-
-                <!-- Tiles containing the songs -->
-
-                <div class="flexbox songs-list">
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/artist-3480274_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/audience-1867754_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/drummer-6869168_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/concert-1854113_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/people-2587186_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/headphones-4595492_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/music-producer-4335953_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                </div>
-                
-            </div>
-
-            <!-- Container for the songs -->
-
-            <div id="albums" class="song-container">
-                Popular albums and singles
-
-                <!-- Tiles containing the songs -->
-
-                <div class="flexbox songs-list">
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/music-4452911_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/avenue-815297_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/forest-3833973_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/landscape-9521261_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/mimosa-7910067_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/guitar-1699501_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/concert-1854113_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
                 </div>
 
-                
-            </div>
+                <!-- Container for the songs -->
 
-            <!-- Container for the songs -->
+                <div id="artists" class="song-container">
+                    Popular artists
 
-            <div id="radio" class="song-container">
-                Popular radio
+                    <!-- Tiles containing the songs -->
 
-                <!-- Tiles containing the songs -->
+                    <div class="flexbox songs-list">
 
-                <div class="flexbox songs-list">
+                        <div class="flexbox song-tiles border ais jcc hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
 
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/mountains-5819652_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
                     </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/agility-1850711_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/headphones-4595492_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/lighthouse-6785763_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/lighthouse-2542726_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/galley-2656820_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/granada-3821691_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                </div>
                     
+                </div>
+
+                <!-- Container for the songs -->
+
+                <div id="albums" class="song-container">
+                    Popular albums and singles
+
+                    <!-- Tiles containing the songs -->
+
+                    <div class="flexbox songs-list">
+
+                        <div class="flexbox song-tiles border ais jcc hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- Container for the songs -->
+
+                <div id="featured" class="song-container">
+                    Featured Charts
+
+                    <!-- Tiles containing the songs -->
+
+                    <div class="flexbox songs-list">
+
+                        <div class="flexbox song-tiles border ais jcc hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+                <!-- Container for the songs -->
+
+                <div id="best" class="song-container">
+                    Best On List
+
+                    <!-- Tiles containing the songs -->
+
+                    <div class="flexbox songs-list">
+
+                        <div class="flexbox song-tiles border ais jcc hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                        <div class="flexbox song-tiles border ais hover">
+                            <img src="https://picsum.photos/200/300" alt="Song poster" class="song-tile-images border">
+                            <p class="song-name manrope white">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic singer-name">Lorem, ipsum.</p>
+                            <p class="singers gray flexbox jcsa aic genre-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, autem.</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Queue section of the website -->
+
+        <div class="flexbox white darkgrey-background border aic" id="Queue">
+
+            <div class="flexbox jcse inter bold library-padding side-heading" id="queue-heading">
+                Upcoming Vibes
             </div>
 
-            <!-- Container for the songs -->
+            <div class="library-margin library-padding flexbox library-gap listed-side-songs individual-scroll" id="queue-songs">
 
-            <div id="featured" class="song-container">
-                Featured Charts
-
-                <!-- Tiles containing the songs -->
-
-                <div class="flexbox songs-list">
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/moon-7021271_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/galaxy-11098_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/aurora-borealis-744351_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/universe-8153526_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/winter-3084963_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/granada-3821691_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/avenue-815297_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                </div>
-            
-            </div>
-
-            <!-- Container for the songs -->
-
-            <div id="best" class="song-container">
-                Best On List
-
-                <!-- Tiles containing the songs -->
-
-                <div class="flexbox songs-list">
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/piano-9271509_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/lighthouse-2542726_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/concert-1854113_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/mountains-5819652_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/headphones-4595492_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/forest-3833973_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                    <div class="flexbox song-tiles border ais hover">
-                        <img src="tile-images/concert-7424190_1280.jpg" alt="Song poster" class="song-tile-images border">
-                        <p class="song-name manrope white">Lorem, ipsum.</p>
-                        <p class="singers gray flexbox jcsa aic">Lorem, ipsum dolor, sit amet, consectetur adipisicing</p>
-                    </div>
-
-                </div>
+                <!-- Upcoming songs appear here -->
                 
             </div>
+
         </div>
     </main>
 
@@ -467,9 +408,9 @@
 
             <div class="play-settings song-controls flexbox jcc aic">
                 <img src="icons/prev-song.svg" alt="Play previous song" class="svg-mid playbar-icons" title="Previous song">
-                <img src="icons/rewind-10-seconds.svg" alt="Rewind 10 seconds" class="svg-small playbar-icons" title="Rewind">
+                <img src="icons/rewind-10-seconds.svg" alt="Rewind 10 seconds" class="svg-mid playbar-icons" title="Rewind">
                 <img src="icons/play.svg" alt="Play/Pause button" class="svg-mid playbar-icons" id="play" title="">
-                <img src="icons/10-seconds-forward.svg" alt="Forward 10 seconds" class="svg-small playbar-icons" title="Forward">
+                <img src="icons/10-seconds-forward.svg" alt="Forward 10 seconds" class="svg-mid playbar-icons" title="Forward">
                 <img src="icons/next-song.svg" alt="Play next song" class="svg-mid playbar-icons" title="Next song">
             </div>
 

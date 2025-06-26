@@ -25,17 +25,23 @@ body{
 header{
     position: fixed;
     height: 8vh;
-    margin: 1vh;
+    margin: 1vh 5vw;
     border: 1px solid black;
-    gap: 15vw;
+    gap: 60vw;
 }
 
-.left-header{
-    gap: 2.5vw;
+#searchbar{
+    padding-left: 0.1em;
+    filter: opacity(0.4);
+    border: 0.5em solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8em); /* the glass effect */
+    -webkit-backdrop-filter: blur(8em); /* Safari support */
+    outline: none;
+    transition: all 500ms ease;
 }
 
-.right-header{
-    gap: 3vw;
+#searchButton{
+    height: 4vh;
 }
 
 .search-section>input{
@@ -52,56 +58,44 @@ button{
     border-radius: 5em;
 }
 
-#installApp{
-    filter: invert(0.5);
-    gap: 0.3em;
-}
-
-#installApp:hover{
-    color: var(--fcw);
-    filter: invert(0);
-}
-
 main{
     position: fixed;
     top: 9vh;
-    margin: 1vh;
 }
 
 #library{
     position: fixed;
-    top: 10vh;
     height: 85vh;
     width: 20vw;
     flex-direction: column;
+    overflow-y: hidden;
+    padding-bottom: 2vw;
 }
 
-#library-heading{
-    font-weight: 800;
-    font-size: larger;
-}
-
-#left-top, #create-playlist, #browse-products{
-    height: 50%;
+#library-songs{
     flex-direction: column;
     gap: 1.5vh;
 }
 
-#left-bottom{
-    height: 30%;
-    flex-wrap: wrap;
-}
-
-#language{
-    gap: 0.5vw;
-}
-
 #song-section{
     flex-flow: column;
-    width: 77.5vw;
+    width: 58vw;
     height: 85vh;
-    overflow-y: auto;
     margin-left: 20.5vw;
+}
+
+#Queue{
+    flex-direction: column;
+    width: 20vw;
+    height: 85vh;
+    margin-left: .5vw;
+    overflow-y: hidden;
+    padding-bottom: 2vw;
+}
+
+#queue-songs{
+    flex-direction: column;
+    gap: 1.5vh;
 }
 
 .song-tiles:hover{
@@ -112,7 +106,7 @@ main{
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    margin: 0vh 20vw;
+    margin: 0vh 19.47vw;
     height: 11vh;
     width: 60%;
     border-top-left-radius: 5vw;
