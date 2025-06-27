@@ -125,8 +125,9 @@
 
 .listed-side-songs{
     position: relative;
-    top: 4vh;
+    top: 6vh;
     padding: 1vw;
+    overflow-x: hidden;
 }
 
 .individual-scroll{
@@ -194,6 +195,21 @@
     padding: 1em 1em;
     gap: 1.5vw;
     overflow-x: auto;
+}
+
+.queue-song-image{
+    margin-left: 1vw;
+    height: 10vh;
+}
+
+.queue-song{
+    height: 11vh;
+    gap: 0.5em;
+}
+
+.queue-song:hover{
+    background-color: var(--lightgrey);
+    transition-duration: 500ms;
 }
 
 .playbar-icons{
