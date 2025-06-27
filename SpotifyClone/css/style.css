@@ -124,3 +124,8 @@ main{
     box-shadow:  0 0 1em rgba(0, 85, 239, 1);
     filter: brightness(1.5);
 }
+
+#playing{
+    height: 5vh; 
+    width: 10vh;
+}

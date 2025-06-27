@@ -105,7 +105,7 @@
 
 .text-hover:hover{
     color: var(--fcw);
-    filter: invert(0);
+    transition-duration: 500ms;
 }
 
 .grey-bg:hover{
@@ -225,4 +225,8 @@
 .song-controls{
     gap: 0.2vw;
     flex-direction: row;
+}
+
+.displayBar-playing{
+    gap: 0.5vw;
 }

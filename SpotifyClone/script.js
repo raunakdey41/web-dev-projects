@@ -1,7 +1,6 @@
 const id = "da69b01d"; // Private ID
-const main_url = `https://api.jamendo.com/v3.0/tracks/?client_id=${id}&format=json&limit=35&search=chill` // URL to fetch songs for the main section
 
-// A set of 70 commonly used music tags
+// A set of commonly used music tags
 const musicTags = [
   // Core genres
   "pop", "rock", "hiphop", "rap", "jazz", "blues", "metal", "punk", "classical", "country",
@@ -26,8 +25,28 @@ const musicTags = [
   "lofi beats", "clean vocals", "heavy bass", "dry mix", "808", "analog", "distorted", "layered", "live", "studio",
 
   // Cultural/Regional styles
-  "k-pop", "j-pop", "latin", "reggaeton", "bhangra", "bollywood", "celtic", "arabic", "afrobeat", "tropical"
+  "k-pop", "j-pop", "latin", "reggaeton", "bhangra", "bollywood", "celtic", "arabic", "afrobeat", "tropical",
+
+  // English & Western Pop/Rock/Rap
+  "taylor swift", "selena gomez", "billie eilish", "dua lipa", "bruno mars", "justin bieber", "ed sheeran",  "rihanna", "drake", "weeknd", "charlie puth", "shawn mendes", "post malone", "kanye west", "beyoncé", "avicii", "lil nas x", "eminem",
+
+  // Indian Playback (Hindi/Bollywood)
+  "atif aslam", "udit narayan", "alka yagnik", "neha kakkar", "jubin nautiyal", "palak muchhal", "sunidhi chauhan", "kishore kumar", "lata mangeshkar", "mohit chauhan", "arijit singh", "sonu nigam","shreya ghoshal", 
+
+  // South Indian + Regional
+  "sid sriram", "anirudh ravichander", "shankar mahadevan", "karthik", "chinmayi sripada",
+
+  // K-pop & Asian Artists
+  "iu", "jungkook", "taeyeon", "blackpink", "stray kids",
+
+  // Indie / International / Folk
+  "prateek kuhad", "anish sasha", "adele", "lorde", "norah jones", "john mayer",
+  "hozier", "lewis capaldi", "sigrid", "aurora"
 ];
+
+const main_url = `https://api.jamendo.com/v3.0/tracks/?client_id=${id}&format=json&limit=35&search=${musicTags[Math.ceil(Math.random()*35)]}` // URL to fetch songs for the main section
+
+const queue_url = `https://api.jamendo.com/v3.0/tracks/?client_id=${id}&format=json&limit=20&search=${musicTags[Math.floor(Math.random()*151)]}`// URL to fetch songs for the queue section
 
 // Storage variables for the display bar items
 
@@ -49,8 +68,6 @@ let queueTiles = document.querySelectorAll(".queue-song"); // Store the tiles of
 document.addEventListener("DOMContentLoaded", function(){
     fetchMainSongs();
 })
-
-setTimeout(fetchQueueSongs, 1000);
 
 // Fetch songs from Jamendo only for the main songs section
 async function fetchMainSongs() {
@@ -77,8 +94,6 @@ async function fetchMainSongs() {
 
 // Fetch songs from Jamendo only for the queue section
 async function fetchQueueSongs() {
-    const queue_url = `https://api.jamendo.com/v3.0/tracks/?client_id=${id}&format=json&limit=20&search=${musicTags[Math.floor(Math.random()*70)]}`// URL to fetch songs for the queue section
-
     let fetchedQueuesongs = await fetch(queue_url);
 
     fetchedQueuesongs = await fetchedQueuesongs.json();
@@ -170,5 +185,34 @@ displayBar.addEventListener("click", function(){
         bar.style.transitionDuration = "500ms";
     }
 });
+
+while(true){
+    for(let tile of songTiles){
+        tile.addEventListener("click", function(){
+            const songId = tile.getAttribute("id");
+            // const songName = tile.getAttribute("name");
+            // const songArtist = tile.getAttribute("artist_name");
+            // const songImage = tile.getAttribute("data-image");
+
+            let songName, songArtist, songImage;
+            const childNodes = tile.childNodes;
+            songImage = childNodes[1].getAttribute("src");
+            songName = childNodes[3].textContent;
+            songArtist = childNodes[5].textContent;
+
+            const current = document.getElementById("displayBar-playing");
+            const currentSongImage = document.getElementById("playing");
+            const currentSong = document.getElementById("CurrentSong");
+            const currentSinger = document.getElementById("CurrentSinger");
+
+            current.setAttribute("id", songId);
+            currentSongImage.setAttribute("src", songImage);
+            currentSong.textContent = songName;
+            currentSinger.textContent = songArtist;
+
+            setTimeout(fetchQueueSongs, 1000);
+        });
+    }
+}
 
 // songs [id], [image], [album-name], [artist-name]
