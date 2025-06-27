@@ -67,6 +67,7 @@ let queueTiles = document.querySelectorAll(".queue-song"); // Store the tiles of
 // Fetch songs from Jamendo as soon as window loads
 document.addEventListener("DOMContentLoaded", function(){
     fetchMainSongs();
+    document.getElementById("displayBar-playing").style.display = "none";
 })
 
 // Fetch songs from Jamendo only for the main songs section
@@ -186,33 +187,35 @@ displayBar.addEventListener("click", function(){
     }
 });
 
-while(true){
-    for(let tile of songTiles){
-        tile.addEventListener("click", function(){
-            const songId = tile.getAttribute("id");
-            // const songName = tile.getAttribute("name");
-            // const songArtist = tile.getAttribute("artist_name");
-            // const songImage = tile.getAttribute("data-image");
 
-            let songName, songArtist, songImage;
-            const childNodes = tile.childNodes;
-            songImage = childNodes[1].getAttribute("src");
-            songName = childNodes[3].textContent;
-            songArtist = childNodes[5].textContent;
+for(let tile of songTiles){
+    tile.addEventListener("click", function(){
+        const songId = tile.getAttribute("id"); // ID of the song selected
 
-            const current = document.getElementById("displayBar-playing");
-            const currentSongImage = document.getElementById("playing");
-            const currentSong = document.getElementById("CurrentSong");
-            const currentSinger = document.getElementById("CurrentSinger");
+        let songName, songArtist, songImage;
+        const childNodes = tile.childNodes;
+        songImage = childNodes[1].getAttribute("src"); //Image of the song
+        songName = childNodes[3].textContent; // Name of the song
+        songArtist = childNodes[5].textContent; // Singer of the song
 
-            current.setAttribute("id", songId);
-            currentSongImage.setAttribute("src", songImage);
-            currentSong.textContent = songName;
-            currentSinger.textContent = songArtist;
+        document.getElementById("displayBar-playing").style.display = "flex";
+        document.getElementById("displayBar-playing").style.width = "30vh";
+        document.getElementById("displayBar-playing").style.height = "6vh";
+            
 
-            setTimeout(fetchQueueSongs, 1000);
-        });
-    }
+        // Assigning the values to the footer container
+
+        const current = document.getElementById("displayBar-playing");
+        const currentSongImage = document.getElementById("playing");
+        const currentSong = document.getElementById("CurrentSong");
+        const currentSinger = document.getElementById("CurrentSinger");
+
+        current.setAttribute("id", songId);       currentSongImage.setAttribute("src", songImage);
+        currentSong.textContent = songName;
+        currentSinger.textContent = songArtist;
+
+        setTimeout(fetchQueueSongs, 1000);
+    });
 }
 
 // songs [id], [image], [album-name], [artist-name]
